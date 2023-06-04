@@ -1,0 +1,10 @@
+div#a4-paper {
+  border: 0px solid rgb(216, 216, 216);
+  flex-direction: column;
+  width: 700px;
+  height: 970px;
+}
+
+question-block {
+  padding: 4px;
+}

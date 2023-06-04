@@ -1,0 +1,11 @@
+<div class="block">
+  <div>{{ no }}.</div>
+  <div>{{ num1 }} {{ symbol }} {{ num2 }} =</div>
+  <div
+    [attr.title]="num3"
+    [class.show-answer]="showAnswer"
+    [class.hide-answer]="!showAnswer"
+  >
+    &nbsp;{{ num3 }}
+  </div>
+</div>

@@ -1,0 +1,25 @@
+div.block {
+    display: flex;
+}
+
+div.block > div {
+    display: table-cell;
+}
+
+div.block > div:first-child {
+    width: 35px;
+}
+
+div.block > div:nth-child(3) {
+    border-bottom: 1px solid black;
+    flex-grow: 4;
+}
+
+.show-answer {
+    background-color: rgb(245, 244, 209);
+    color: black;
+}
+
+.hide-answer {
+    color: white;
+}

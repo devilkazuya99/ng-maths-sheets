@@ -1,0 +1,51 @@
+.block {
+    /* border: 1px solid gray; */
+    display: flex;
+    height: 45px;
+    align-items: center;
+}
+
+.fraction {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid gray; */
+}
+
+.fraction > div:first-child {
+    color: blue;
+    font-size: 16pt;
+    /* border: 1px solid gray; */
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.fraction > div > div {
+    color: red;
+    font-size: 11pt;
+    width: 20px;
+    text-align: center;
+}
+
+.fraction > div > div:first-child {
+    border-bottom: 1px solid black;
+}
+
+.qNo {
+    width: 23px;
+}
+
+.symbol, .equal, .qNo {
+    vertical-align: middle;
+    margin: 7px 2px;
+    /* border: 1px solid gray; */
+}
+
+.answer {
+    border-bottom: 1px solid black;
+}
+
+.answer div {
+    color: white !important;
+    border: none !important;
+    /* display: none; */
+}
