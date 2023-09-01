@@ -7,7 +7,7 @@
         <div>{{a3}}</div>
     </div>
   </div>
-  <div class="symbol">&nbsp;{{ symbol }} </div>
+  <div class="symbol"> {{ symbol }} </div>
   <div class="fraction"> 
     <div *ngIf="b1 > 0">{{b1}}</div>
     <div>
@@ -23,8 +23,8 @@
   >
   <div *ngIf="c1 > 0">{{c1}}</div>
   <div>
-      <div>{{c2}}</div>
-      <div>{{c3}}</div>
+      <div>{{c2 ? c2 : ' '}}</div>
+      <div>{{c3 ? c3 : ' '}}</div>
   </div>
 </div>
 </div>

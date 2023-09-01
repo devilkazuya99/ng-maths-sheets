@@ -1,20 +1,10 @@
 <div>
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
-      <li class="pure-menu-item">
-        <a routerLink="plus" class="pure-menu-link">Plus</a>
-      </li>
-      <li class="pure-menu-item">
-        <a routerLink="minus" class="pure-menu-link">Minus</a>
-      </li>
-      <li class="pure-menu-item">
-        <a routerLink="multiply" class="pure-menu-link">Multiply</a>
-      </li>
-      <li class="pure-menu-item">
-        <a routerLink="divide" class="pure-menu-link">Divide</a>
-      </li>
-      <li class="pure-menu-item">
-        <a routerLink="f_plus" class="pure-menu-link">Fraction Plus</a>
+      <li 
+        *ngFor="let m of menuItems"
+        class="pure-menu-item">
+        <a [routerLink]="m.link" class="pure-menu-link">{{m.label}}</a>
       </li>
       <li class="pure-menu-item">
         <button (click)="toggleShowAnswer()" >

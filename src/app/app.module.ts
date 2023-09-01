@@ -12,7 +12,10 @@ import {
   MinusPageComponent, 
   MultiplyPageComponent, 
   PlusPageComponent,
-  FractionPlusPageComponent
+  FractionPlusPageComponent,
+  FractionMinusPageComponent,
+  FractionMultiplyPageComponent,
+  FractionDividePageComponent
 } from './pages';
 import { ApplicationState } from './state/application.state';
 import { FractionBlockComponent } from './fraction-block/fraction-block.component';
@@ -27,7 +30,10 @@ import { FractionBlockComponent } from './fraction-block/fraction-block.componen
     DividePageComponent,
     DefaultPageComponent,
     FractionBlockComponent,
-    FractionPlusPageComponent
+    FractionPlusPageComponent,
+    FractionMinusPageComponent,
+    FractionMultiplyPageComponent,
+    FractionDividePageComponent
   ],
   imports: [
     BrowserModule,

@@ -36,35 +36,53 @@ export class FractionBlockComponent implements OnInit {
           }
   }
   generateForDevide() {
-    this.a2 = 1;
-    this.a3 = 2;
-    this.b2 = 3;
-    this.b3 = 4;
+    this.generateForPlus();
   }
   generateForMultiply() {
-    // throw new Error('Method not implemented.');
+    this.generateForPlus();
   }
   generateForMinus() {
-    // throw new Error('Method not implemented.');
+    const n1 = MathUtils.getRandomInt(3, 7);
+    let n2 = MathUtils.getRandomInt(n1, 9);
+    if (n2 == n1) {
+      n2 += 1;
+    }
+    let n3 = MathUtils.getRandomInt(1, 5);
+    let n4 = MathUtils.getRandomInt(n3, 9);
+
+    function leftIsSmaller(lF: number[], rF: any[]): boolean {
+      return (lF[0]/lF[1]) <= (rF[0]/rF[1]);
+    }
+    while (leftIsSmaller([n1, n2], [n3, n4]) || (n2 == n4)) {
+      n3 = MathUtils.getRandomInt(1, 5);
+      n4 = MathUtils.getRandomInt(n3, 9);  
+    }
+
+    this.a2 = n1;
+    this.a3 = n2;
+    this.b2 = n3;
+    this.b3 = n4;
   }
   generateForPlus() {
     const n1 = MathUtils.getRandomInt(1, 5);
     let n2 = MathUtils.getRandomInt(n1, 9);
-    if(n2 == n1) {
+    if (n2 == n1) {
       n2 += 1;
     }
     const n3 = MathUtils.getRandomInt(1, 5);
     let n4 = MathUtils.getRandomInt(n3, 9);
-    if(n4 == n3) {
+    if (n4 == n3) {
       n4 += 1;
     }
-    if(n2 == n4) {
+    if (n2 == n4) {
       n4 += 1;
     }
-   
+
     this.a2 = n1;
     this.a3 = n2;
     this.b2 = n3;
     this.b3 = n4;
   }
 }
+
+

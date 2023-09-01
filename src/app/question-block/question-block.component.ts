@@ -55,8 +55,11 @@ export class QuestionBlockComponent implements OnInit {
     const min = max / 4;
     const n1 = MathUtils.getRandomInt(min, max);
     let n2 = MathUtils.getRandomInt(min, max);
-    while (n2 > n1) {
+    while (n2 > n1 ) {
       n2 = MathUtils.getRandomInt(min, max);
+    }
+    if(n2 == n1) {
+      n2 -= 7;
     }
     this.num1 = n1;
     this.num2 = n2;

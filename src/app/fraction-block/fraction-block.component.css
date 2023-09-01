@@ -12,7 +12,7 @@
 }
 
 .fraction > div:first-child {
-    color: blue;
+    /* color: blue; */
     font-size: 16pt;
     /* border: 1px solid gray; */
     margin-left: 2px;
@@ -20,7 +20,7 @@
 }
 
 .fraction > div > div {
-    color: red;
+    /* color: red; */
     font-size: 11pt;
     width: 20px;
     text-align: center;
@@ -42,6 +42,8 @@
 
 .answer {
     border-bottom: 1px solid black;
+    min-height: 32px;
+    min-width: 45px;
 }
 
 .answer div {
